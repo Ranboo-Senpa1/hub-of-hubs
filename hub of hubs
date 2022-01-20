@@ -1,0 +1,84 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local hubs = Instance.new("TextButton")
+local games = Instance.new("TextButton")
+local trol = Instance.new("TextButton")
+local useful = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+Frame.Position = UDim2.new(0.278928131, 0, 0.387892365, 0)
+Frame.Size = UDim2.new(0, 296, 0, 206)
+Frame.Active = true
+Frame.Draggable = true
+
+TextLabel.Parent = ScreenGui
+TextLabel.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
+TextLabel.Position = UDim2.new(0.278928131, 0, 0.387892365, 0)
+TextLabel.Size = UDim2.new(0, 296, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "HUB OF HUBS"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+hubs.Name = "hubs"
+hubs.Parent = ScreenGui
+hubs.BackgroundColor3 = Color3.fromRGB(255, 170, 255)
+hubs.Position = UDim2.new(0.288672358, 0, 0.538116574, 0)
+hubs.Size = UDim2.new(0, 120, 0, 50)
+hubs.Font = Enum.Font.SourceSans
+hubs.Text = "Hubs"
+hubs.TextColor3 = Color3.fromRGB(0, 0, 0)
+hubs.TextSize = 14.000
+hubs.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Ranboo-Senpa1/hubs/main/hubs"))()
+end)
+
+games.Name = "games"
+games.Parent = ScreenGui
+games.BackgroundColor3 = Color3.fromRGB(255, 170, 255)
+games.Position = UDim2.new(0.476248503, 0, 0.538116574, 0)
+games.Size = UDim2.new(0, 120, 0, 50)
+games.Font = Enum.Font.SourceSans
+games.Text = "Games"
+games.TextColor3 = Color3.fromRGB(0, 0, 0)
+games.TextSize = 14.000
+games.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Ranboo-Senpa1/Games/main/Games"))()
+end)
+
+trol.Name = "trol"
+trol.Parent = ScreenGui
+trol.BackgroundColor3 = Color3.fromRGB(255, 170, 255)
+trol.Position = UDim2.new(0.288672358, 0, 0.688340783, 0)
+trol.Size = UDim2.new(0, 120, 0, 50)
+trol.Font = Enum.Font.SourceSans
+trol.Text = "Troll"
+trol.TextColor3 = Color3.fromRGB(0, 0, 0)
+trol.TextSize = 14.000
+trol.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Ranboo-Senpa1/Trol/main/Trol"))()
+end)
+
+useful.Name = "useful"
+useful.Parent = ScreenGui
+useful.BackgroundColor3 = Color3.fromRGB(255, 170, 255)
+useful.Position = UDim2.new(0.476248503, 0, 0.688340783, 0)
+useful.Size = UDim2.new(0, 120, 0, 50)
+useful.Font = Enum.Font.SourceSans
+useful.Text = "Other useful"
+useful.TextColor3 = Color3.fromRGB(0, 0, 0)
+useful.TextSize = 14.000
+useful.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Ranboo-Senpa1/Useful/main/Useful"))()
+end)
